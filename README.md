@@ -21,10 +21,10 @@ Deliver markdown prompts into tmux panes from the terminal.
 | Platform | Status |
 |----------|--------|
 | macOS Apple Silicon (arm64) | Signed + notarized |
-| macOS Intel (amd64) | Signed + notarized (from tprompt v0.2.2) |
+| macOS Intel (amd64) | Signed + notarized (from tprompt v0.3.0) |
 | Linux x86_64 / arm64 | Supported |
 
-Until tprompt v0.2.2 ships a macOS Intel build, `brew install` on an Intel Mac
+Until tprompt v0.3.0 ships a macOS Intel build, `brew install` on an Intel Mac
 exits with a message pointing at `mise`/`ubi` or a source build.
 
 ## Maintenance
