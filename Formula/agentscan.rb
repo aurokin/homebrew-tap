@@ -1,6 +1,7 @@
 class Agentscan < Formula
   desc "CLI and daemon for discovering and managing AI agent panes in tmux"
   homepage "https://github.com/aurokin/agentscan"
+  license "MIT"
 
   livecheck do
     url :stable
@@ -12,8 +13,8 @@ class Agentscan < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aurokin/agentscan/releases/download/v0.10.0/agentscan-aarch64-apple-darwin.tar.gz"
-      sha256 "3170f6ab08d30bd161b4dc99027ea7990d272b86e32047d2b6503ca7760c8fa3"
+      url "https://github.com/aurokin/agentscan/releases/download/v0.11.0/agentscan-aarch64-apple-darwin.tar.gz"
+      sha256 "906e0af770e6a67ceff1a773768937bcf2e2b37f15c441127b1db7b21554d2d5"
     end
     on_intel do
       odie "agentscan does not ship a macOS Intel (x86_64) binary. " \
@@ -23,17 +24,20 @@ class Agentscan < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/aurokin/agentscan/releases/download/v0.10.0/agentscan-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1f25e81d1011df8876426bf79d20a51e8fd8abb01ef4a3ccaba1aeb5118797c6"
+      url "https://github.com/aurokin/agentscan/releases/download/v0.11.0/agentscan-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "db19912c49bc68e2bcf13ac8c19e2481c7fb94dc247b05017ef44898cf75fc88"
     end
     on_intel do
-      url "https://github.com/aurokin/agentscan/releases/download/v0.10.0/agentscan-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "018574ad08d7c302f76416a5a1454933ad3115d83179ab9b0fa98787d29969f2"
+      url "https://github.com/aurokin/agentscan/releases/download/v0.11.0/agentscan-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7257b08434937c6f333d3ef237b76cbd121b52d538c6e6413a5bff488a865e74"
     end
   end
 
   def install
     bin.install "agentscan"
+    bash_completion.install "completions/agentscan.bash"
+    zsh_completion.install "completions/_agentscan"
+    fish_completion.install "completions/agentscan.fish"
   end
 
   def caveats

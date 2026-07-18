@@ -1,6 +1,6 @@
 cask "agentscan-desktop" do
-  version "0.10.0"
-  sha256 "836bf8d27cbc3c33b4a974af716f2848aa095573cfe59cbe42ab395f8687207b"
+  version "0.11.0"
+  sha256 "9087d566cedade64edd98540b41a8a057f5505c4f00988ad3daa833dd4888808"
 
   url "https://github.com/aurokin/agentscan/releases/download/v#{version}/agentscan-desktop-aarch64-apple-darwin.zip"
   name "agentscan"
