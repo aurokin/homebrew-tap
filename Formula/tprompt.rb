@@ -1,7 +1,7 @@
 class Tprompt < Formula
   desc "Deliver markdown prompts into tmux panes from the terminal"
   homepage "https://github.com/aurokin/tprompt"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   livecheck do
@@ -14,23 +14,23 @@ class Tprompt < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aurokin/tprompt/releases/download/v0.6.0/tprompt-darwin-arm64.tar.gz"
-      sha256 "89a7a6e795ea9634a594bcb610a8e35b1b7340986b3c3b792d120927ca4cfd0e"
+      url "https://github.com/aurokin/tprompt/releases/download/v0.7.0/tprompt-darwin-arm64.tar.gz"
+      sha256 "8d37afe531f5f88ba78b57ee665f2e311236cb66e35d91fbbff46db450cac09b"
     end
     on_intel do
-      url "https://github.com/aurokin/tprompt/releases/download/v0.6.0/tprompt-darwin-amd64.tar.gz"
-      sha256 "3e4d94ae1bf5b4ff1aaf7f4b1ce37823af935bb6895145a48b4d0bfa7a36466b"
+      url "https://github.com/aurokin/tprompt/releases/download/v0.7.0/tprompt-darwin-amd64.tar.gz"
+      sha256 "e67fa8d4ed229bb8f402e1837da1c7ed94edd4df187a1c7f34f8d20882653a85"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/aurokin/tprompt/releases/download/v0.6.0/tprompt-linux-arm64.tar.gz"
-      sha256 "eaca01840fd0156340aecf13c768fae63227cc1c9260e1e2392e194c704a5464"
+      url "https://github.com/aurokin/tprompt/releases/download/v0.7.0/tprompt-linux-arm64.tar.gz"
+      sha256 "911c07f9768c5cd38a70d0d74bd6b28240937c0a283d3859ab8a0ba8ae4fbdab"
     end
     on_intel do
-      url "https://github.com/aurokin/tprompt/releases/download/v0.6.0/tprompt-linux-amd64.tar.gz"
-      sha256 "335513d436c035509e3f1432f2efe7f645a85ef4dfd3dcf65164f85dc7d76e93"
+      url "https://github.com/aurokin/tprompt/releases/download/v0.7.0/tprompt-linux-amd64.tar.gz"
+      sha256 "e266a3f9a8eb9148657bb03c4594c0d890028de82689fc12a551f322865fd2ba"
     end
   end
 
