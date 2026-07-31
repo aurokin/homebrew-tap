@@ -13,8 +13,8 @@ class Agentscan < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aurokin/agentscan/releases/download/v0.11.2/agentscan-aarch64-apple-darwin.tar.gz"
-      sha256 "2abb5d6c0c85b32cdec21f615c065fe380fa53fc6a625a892147fb482cc26508"
+      url "https://github.com/aurokin/agentscan/releases/download/v0.11.3/agentscan-aarch64-apple-darwin.tar.gz"
+      sha256 "6b721161bda8b6fd245f37649192f97eecea45e6b5c81a7a21b6f8a5a6f69d5d"
     end
     on_intel do
       odie "agentscan does not ship a macOS Intel (x86_64) binary. " \
@@ -24,12 +24,12 @@ class Agentscan < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/aurokin/agentscan/releases/download/v0.11.2/agentscan-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3e73533f849c121bf9e5af95bab099391ca5680eccc20b0d31f82b7267ee3524"
+      url "https://github.com/aurokin/agentscan/releases/download/v0.11.3/agentscan-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "152913f56b1982c91f438135193aa521897f7c16ed0df7a4fa3e74c2dc323826"
     end
     on_intel do
-      url "https://github.com/aurokin/agentscan/releases/download/v0.11.2/agentscan-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fbbf3db9acac3ac1159c4b27ff957a81fbe1eb6920360e196d17bd0cc109f158"
+      url "https://github.com/aurokin/agentscan/releases/download/v0.11.3/agentscan-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "887d493e4c39fa8ac7ed14b2e02ba4ba4b0161dc2ac30525a12dc0d45f966874"
     end
   end
 
